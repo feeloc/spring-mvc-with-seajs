@@ -1,2 +1,6 @@
 后端spring mvc
 前端seajs
+数据库mysql
+
+新建test数据库，用户名:spring，密码spring。
+jetty启动项目
