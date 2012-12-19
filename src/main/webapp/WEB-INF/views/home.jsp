@@ -5,10 +5,7 @@
 <html>
 <head>
 	<title>我的新项目，开始搞起</title>
-    <link href="<c:url value='/resources/images/favicon.ico'/>" mce_href="favicon.ico" rel="bookmark" type="image/x-icon" />
-    <link href="<c:url value='/resources/images/favicon.ico'/>" rel="icon" type="image/x-icon" />
-    <link href="<c:url value='/resources/images/favicon.ico'/>" rel="shortcut icon" type="image/x-icon" />
-    <script type="text/javascript" src="<c:url value='/resources/js/jquery.1.8.1.js'/>"></script>
+    <c:import url="head.jsp"/>
 </head>
 <body>
 	<h1>搞起spring mvc , backbone js</h1>

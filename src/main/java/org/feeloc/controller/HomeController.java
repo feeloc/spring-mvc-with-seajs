@@ -33,4 +33,14 @@ public class HomeController {
 		return "home";
 	}
 
+    @RequestMapping(value = "/404",method=RequestMethod.GET)
+    public String noFound(){
+        return "404";
+    }
+
+    @RequestMapping(value = "/javascriptmvc",method=RequestMethod.GET)
+    public String goJavascript(){
+        logger.info("Welcome javascript!");
+        return "javascriptmvc";
+    }
 }
