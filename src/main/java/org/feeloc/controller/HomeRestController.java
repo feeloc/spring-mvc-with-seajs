@@ -20,7 +20,7 @@ public class HomeRestController {
     @Autowired
 	private ReferenceDataRepository referenceRepository;
 
-    @RequestMapping(value = "/home",method=RequestMethod.GET, produces="application/json")
+    @RequestMapping(value = "/home",method=RequestMethod.GET, produces="application/json;charset=UTF-8")
     public @ResponseBody List<State> listAllMembers()
     {
         return  referenceRepository.findAll();

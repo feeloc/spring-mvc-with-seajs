@@ -179,8 +179,23 @@
                 this._model.setSelectedIndex(index);
             }
         };
+
         $(function () {
-            var model = new ListModel(['PHP', 'JavaScript']),
+
+            var items = [];
+            $.ajax({
+                url:'/rest/home',
+                async:false,
+                type:'GET',
+                dataType:'json',
+                success:function(data){
+                    $.each(data,function(index,ele){
+                        items.push(ele.name);
+                    });
+                }
+            });
+
+            var model = new ListModel(items),
 
                     view = new ListView(model, {
                         'list' : $('#list'),
