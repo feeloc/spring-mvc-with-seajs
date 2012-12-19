@@ -3,3 +3,5 @@ insert into current_states(id, state_code, name) values(1, 'MA', 'Massachusetts'
 insert into current_states(id, state_code, name) values(2, 'NH', 'New Hampshire') ON DUPLICATE KEY UPDATE id=id;
 insert into current_states(id, state_code, name) values(3, 'ME', 'Maine') ON DUPLICATE KEY UPDATE id=id;
 insert into current_states(id, state_code, name) values(4, 'VT', 'Vermont') ON DUPLICATE KEY UPDATE id=id;
+
+create table if not exists user(id smallint primary key auto_increment ,username char(10));
