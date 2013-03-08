@@ -33,6 +33,12 @@ public class HomeController {
 		return "home";
 	}
 
+    @RequestMapping(value="/user", method=RequestMethod.GET)
+    public String user(Model model) {
+        logger.info("Welcome user!");
+        return "user";
+    }
+
     @RequestMapping(value = "/404",method=RequestMethod.GET)
     public String noFound(){
         return "404";
